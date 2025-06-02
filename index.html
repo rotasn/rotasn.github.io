@@ -1,461 +1,57 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
-<head>
-
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Nikolaos Rotas | Software Engineer</title>
-
-
-  <meta name="description" content="Portfolio of Nikolaos Rotas, Software Engineer.">
-  <meta name="keywords" content="Nikolaos Rotas,software engineer, front-end developer, electrical engineer, computer engineer, JavaScript, React, Electron">
-  <meta name="author" content="Nikolaos Rotas">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="t_V56AWGmBohZ68yOx2H_6O4OKo8yqJzXNrcnob46JQ" />
-
-  <meta property="og:title" content="Nikolaos Rotas | Front-End Developer Portfolio">
-  <meta property="og:description" content="Portfolio of Nikolaos Rotas, Electrical and Computer Engineer specializing in front-end development.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rotasn.github.io">     
- 
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-
-    #typewriter-text {
-
-      white-space: pre-line;
-
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Nikolaos Rotas | Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Nikolaos Rotas, Software Engineer specializing in front-end development with React, Electron, and JavaScript.">
+    <meta name="author" content="Nikolaos Rotas">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Nikolaos Rotas, software engineer, front-end developer, electrical engineer, computer engineer, JavaScript, TypeScript, React, Angular, Electron">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="t_V56AWGmBohZ68yOx2H_6O4OKo8yqJzXNrcnob46JQ" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Nikolaos Rotas | Software Engineer Portfolio">
+    <meta property="og:description" content="Portfolio of Nikolaos Rotas, Electrical and Computer Engineer specializing in front-end development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rotasn.github.io">
+    <meta property="og:image" content="https://rotasn.github.io/preview-image.jpg"> <!-- Add your preview image -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nikolaos Rotas",
+      "jobTitle": "Software Engineer",
+      "url": "https://rotasn.github.io",
+      "sameAs": [
+        "https://github.com/rotasn",
+        "https://linkedin.com/in/rotasn"
+      ]
     }
-
-  </style>
-
-</head>
-
-<body>
-
-  <!-- Header with navigation -->
-
-  <header class="main-header">
-
-    <nav class="nav-bar">
-
-      <ul class="nav-links">
-
-        <li><a href="#home">Home</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </nav>
-
-  </header>
-
-  <!-- Home / Landing Section -->
-
-  <section class="landing" id="home">
-
-    <div class="landing-container">
-
-      <img src="rotasn.jpg" alt="Nikolaos Rotas" class="profile-pic" />
-
-      <div class="intro-text">
-
-        <h1 id="typewriter-text"></h1>
-
-        <a href="./Rotas_CV.pdf" class="cv-button" target="_blank" rel="noopener noreferrer">View CV</a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Skills Section -->
-
-  <section class="info" id="skills">
-
-    <h3>Skills</h3>
-
-    <div class="skills-grid">
-
-      <div class="skill-card">
-
-        <i class="devicon-javascript-plain colored"></i>
-
-        <h4>JavaScript</h4>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="devicon-python-plain colored"></i>
-
-        <h4>Python</h4>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="devicon-react-plain colored"></i>
-
-        <h4>React</h4>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="devicon-c-plain colored"></i>
-
-        <h4>C</h4>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="devicon-electron-original colored"></i>
-
-        <h4>Electron</h4>
-
-      </div>
-
-      <div class="skill-card">
-
-        <i class="devicon-matlab-plain colored"></i>
-
-        <h4>Matlab</h4>
-
-      </div>
-
-    </div>
-
-  </section>
-
- 
-
-  <!-- Projects Section -->
-
-  <section class="info" id="projects">
-
-    <h3>Projects</h3>
-
-    <ul>
-
-      <li>
-
-        <b>Marauder</b>
-
-        <p><img src="marauder.ico" alt="Marauder icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-
-        <p><a href="#" class="toggle-description">Description</a></p>
-
-        <div class="project-description" style="display: none;">
-
-          <p>An automatic mapping tool for Interactive Fiction games.</p>
-
-          <ul>
-
-            <li>Automatic mapping of the game's rooms and connections.</li>
-
-            <li>A multi-layer display system to display rooms on different floors</li>
-
-            <li>Quick travel to the desired room</li>
-
-            <li>Note taking for rooms</li>
-
-            <li>Automatic exploration (using an agent to build the map)</li>
-
-            <li>Save/Load maps for future playthroughs</li>
-
-          </ul>
-
-          <p><i>Built with Electron, using JavaScript and a bit of Python. Room detection uses rule-based filtering and NLP. Quick travel uses BFS. Auto-exploration uses DFS + backtracking. Maps are saved as JSON.</i></p>
-
-        </div>
-
-        <a href="https://github.com/rotasn/marauder/releases/tag/v-2.0" target="_blank" class="project-link">View Project</a>
-
-      </li>
-
-    </ul>
-
-    <ul>
-
-      <li>
-
-        <b>Ball on Beam Simulation</b>
-
-        <p><img src="ballonbeam.png" alt="Ballonbeam icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-
-        <p><a href="#" class="toggle-description">Description</a></p>
-
-        <div class="project-description" style="display: none;">
-
-          <p>A dynamic simulation of a classic control systems problem.</p>
-
-          <ul>
-
-            <li>Real-time PID control of a ball's position on a beam</li>
-
-            <li>Responsive UI for parameter tuning and visualization</li>            
-
-          </ul>
-
-          <p><i>Built with React. Physics approximated via kinematics + PID loop. SVG to simulate real-time visuals</i></p>
-
-        </div>
-
-        <a href="https://github.com/rotasn/ball-on-beam/" target="_blank" class="project-link">View Project</a>
-
-      </li>
-
-    </ul>
-
-    <ul>
-
-      <li>
-
-        <b>File Encryptor</b>
-
-        <p><img src="encryptorpython.png" alt="Encryptor icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-
-        <p><a href="#" class="toggle-description">Description</a></p>
-
-        <div class="project-description" style="display: none;">
-
-          <p>A secure desktop application for encrypting and decrypting files with password protection.</p>
-
-          <ul>
-
-            <li>Strong Encryption</li>
-
-            <li>Password Protection: Secure your files with password-based encryption</li>
-
-            <li>Modern UI</li>
-
-            <li>Optional automatic backup creation</li>
-
-            <li>Password Strength Meter</li>
-
-            <li>Automatic Encryption Detection</li>
-
-          </ul> 
-
-          <p><i>Built with PyQt5 for the UI framework and cryptography for the encryption functionality, using Python. Encryption Uses Fernet symmetric encryption with PBKDF2 key derivation.</i></p>
-
-        </div>
-
-        <a href="https://github.com/rotasn/file-encryptor/releases/tag/0.1" target="_blank" class="project-link">View Project</a>
-
-      </li>
-
-    </ul>
-
-    <ul>
-
-      <li>
-
-        <b>Connect 4</b>
-
-        <p><img src="connect4.png" alt="Connect 4 icon" style="width: 100px; height: 100px; vertical-align: middle; margin-right: 8px;" /></p>
-
-        <p><a href="#" class="toggle-description">Description</a></p>
-
-        <div class="project-description" style="display: none;">
-
-          <p>An old Uni project revamped. </p>
-
-          <ul>
-
-            <li>Improved AI difficulty</li>
-
-            <li>Transition from console to GUI</li>
-
-            <li>Position selection through keyboard or mouse</li>
-
-          </ul>
-
-          <p><i>Built with SDL, using C.</i></p>
-
-        </div>
-
-        <a href="https://github.com/rotasn/connect4" target="_blank" class="project-link">View Project</a>
-
-      </li>
-
-    </ul>
-
-  </section>
-
-  <!-- About Me Section -->
-
-  <section class="info" id="about">
-
-    <h3>About Me</h3>
-
-    <p>
-
-        I studied Mathematics for two years before switching to ECE. In 2025, I graduated from the University of Patras with an Integrated Master's in Electrical Engineering and Computer Technology. During my studies, I minored in Control Systems and Computer Technology.
-
-    </p>
-
-    <p>
-
-        In 2021, I completed an internship at the University Hospital of Patras, where I gained practical experience. 
-
-    </p>
-
-    <p>
-
-        I am now starting my career as an Electrical and Computer Engineer with a strong passion for software engineering. My interests span across hardware, software development, and integrating technology in meaningful ways to solve real-world problems.
-
-    </p>
-
-</section>
-
-
-
-  <!-- Contact Section -->
-
-  <section class="info" id="contact">
-
-    <h3>Contact</h3>
-
-    <div class="social-icons">
-
-      <a href="mailto:rotasn@gmail.com" class="social-icon">
-
-        <i class="fas fa-envelope"></i>
-
-        <span>Email</span>
-
-      </a>
-
-      <a href="https://github.com/rotasn" class="social-icon" target="_blank">
-
-        <i class="fab fa-github"></i>
-
-        <span>GitHub</span>
-
-      </a>
-
-      <a href="https://linkedin.com/in/rotasn" class="social-icon" target="_blank">
-
-        <i class="fab fa-linkedin"></i>
-
-        <span>LinkedIn</span>
-
-      </a>
-
-      <a href="tel:+306982994556" class="social-icon">
-
-        <i class="fas fa-phone"></i>
-
-        <span>Phone</span>
-
-      </a>
-
-    </div>
-
-  </section>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nikolaos Rotas",
-    "jobTitle": "Software Engineer, Front-End Developer",
-    "url": "https://rotasn.github.io",
-    "email": "rotasn@gmail.com",
-    "sameAs": [
-      "https://github.com/rotasn",
-      "https://linkedin.com/in/rotasn"
-    ],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "University of Patras",
-      "department": "Electrical Engineering and Computer Technology"
-    },
-    "knowsAbout": ["JavaScript", "React", "Python", "C", "Electron", "Matlab"]
-  }
-  </script>
-
-  <!-- Scripts -->
-
-  <script>
-
-   document.addEventListener('DOMContentLoaded', function () {
-
-  const toggleLinks = document.querySelectorAll('.toggle-description');
-
-  toggleLinks.forEach(link => {
-
-    link.addEventListener('click', function (e) {
-
-      e.preventDefault();
-
-      const description = this.closest('li').querySelector('.project-description');
-
-      description.style.display = description.style.display === 'none' ? 'block' : 'none';
-
-    });
-
-  });
-
-  
-
-  const typewriterText = document.getElementById("typewriter-text");
-
-  const fullText = "Nikolaos Rotas\nSoftware Engineer";
-
-  
-
-  typewriterText.style.height = (fullText.split('\n').length * 1.5) + 'em';
-
-  
-
-  let i = 0;
-
-  
-
-  function type() {
-
-    if (i < fullText.length) {
-
-      typewriterText.textContent += fullText.charAt(i);
-
-      i++;
-
-      setTimeout(type, 75);
-
-    }
-
-  }
-
-  type();
-
-});
-
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>

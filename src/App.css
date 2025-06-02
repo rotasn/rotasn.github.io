@@ -1,0 +1,7 @@
+.app {
+  font-family: Montserrat, Verdana, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: #000000;
+  padding: 2rem;
+  min-height: 100vh;
+}

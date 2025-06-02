@@ -1,0 +1,175 @@
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+#about,
+
+#skills,
+
+#projects,
+
+#contact {
+
+  scroll-margin-top: 72px; 
+
+}
+
+
+
+.navbar {
+
+  width: 100%;
+
+  height:40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background-color: #f9f5f2;
+
+  color: black;
+
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+}
+
+
+
+.navbar .logo {
+
+  font-weight: bold;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+.navbar .logo-image {
+
+  height: 40px;
+
+  width: auto;
+
+  pointer-events: none;
+
+  user-select: none;
+
+}
+
+
+
+.navbar .nav-links {
+
+  display: flex;
+
+  gap: 1.5rem;
+
+}
+
+
+
+.navbar .nav-links a {
+
+  color: black;
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.5rem;
+
+  transition: all 0.3s ease;
+
+  position: relative;
+
+}
+
+
+
+.nav-links a:hover {
+
+  background-color: #f3ece7;
+
+  color: #000;
+
+  transform: translateY(-2px);
+
+}
+
+
+
+.nav-links a:active {
+
+  transform: translateY(0);
+
+}
+
+
+
+/* Responsive design for navbar */
+
+@media (max-width: 768px) {
+
+    
+
+  .navbar .nav-links {
+
+    gap: 1rem;
+
+  }
+
+  
+
+  .navbar .nav-links a {
+
+    padding: 0.375rem 0.75rem;
+
+    font-size: 0.875rem;
+
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .navbar .nav-links {
+
+    gap: 0.5rem;
+
+  }
+
+  
+
+  .navbar .nav-links a {
+
+    padding: 0.25rem 0.5rem;
+
+    font-size: 0.8125rem;
+
+  }
+
+}
