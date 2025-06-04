@@ -1,175 +1,184 @@
 html {
-
   scroll-behavior: smooth;
-
 }
-
-
 
 #about,
-
 #skills,
-
 #projects,
-
 #contact {
-
   scroll-margin-top: 72px; 
-
 }
-
-
 
 .navbar {
-
   width: 100%;
-
-  height:40px;
-
+  height: 40px;
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   padding: 1rem 2rem;
-
   background-color: #f9f5f2;
-
   color: black;
-
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-
   position: sticky;
-
   top: 0;
-
   z-index: 1000;
-
+  /* Improved mobile performance */
+  will-change: transform;
+  backface-visibility: hidden;
 }
-
-
 
 .navbar .logo {
-
   font-weight: bold;
-
-  font-size: 1.5rem;
-
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   cursor: pointer;
-
   transition: all 0.3s ease;
-
 }
-
-
 
 .navbar .logo-image {
-
-  height: 40px;
-
+  height: clamp(32px, 8vw, 40px);
   width: auto;
-
   pointer-events: none;
-
   user-select: none;
-
 }
-
-
 
 .navbar .nav-links {
-
   display: flex;
-
   gap: 1.5rem;
-
+  align-items: center;
 }
-
-
 
 .navbar .nav-links a {
-
   color: black;
-
   text-decoration: none;
-
   font-weight: 500;
-
   padding: 0.5rem 1rem;
-
   border-radius: 0.5rem;
-
   transition: all 0.3s ease;
-
   position: relative;
-
+  /* Better touch targets */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
-
-
 
 .nav-links a:hover {
-
   background-color: #f3ece7;
-
   color: #000;
-
   transform: translateY(-2px);
-
 }
-
-
 
 .nav-links a:active {
-
   transform: translateY(0);
-
 }
 
-
-
-/* Responsive design for navbar */
-
-@media (max-width: 768px) {
-
-    
-
-  .navbar .nav-links {
-
-    gap: 1rem;
-
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .nav-links a:hover {
+    transform: none;
+    background-color: transparent;
   }
-
   
-
-  .navbar .nav-links a {
-
-    padding: 0.375rem 0.75rem;
-
-    font-size: 0.875rem;
-
+  .nav-links a:active {
+    background-color: #f3ece7;
+    transform: scale(0.95);
+    transition: all 0.1s ease;
   }
-
 }
 
-
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    height: 36px;
+  }
+  
+  #about,
+  #skills,
+  #projects,
+  #contact {
+    scroll-margin-top: 60px;
+  }
+  
+  .navbar .nav-links {
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links a {
+    padding: 0.375rem 0.75rem;
+    font-size: clamp(0.75rem, 2.2vw, 0.875rem);
+    min-height: 40px;
+  }
+}
 
 @media (max-width: 480px) {
-
-  .navbar .nav-links {
-
-    gap: 0.5rem;
-
+  .navbar {
+    padding: 0.5rem 0.75rem;
+    height: 32px;
   }
-
   
-
-  .navbar .nav-links a {
-
-    padding: 0.25rem 0.5rem;
-
-    font-size: 0.8125rem;
-
+  #about,
+  #skills,
+  #projects,
+  #contact {
+    scroll-margin-top: 56px;
   }
+  
+  .navbar .nav-links {
+    gap: 0.5rem;
+  }
+  
+  .navbar .nav-links a {
+    padding: 0.25rem 0.5rem;
+    font-size: clamp(0.7rem, 2vw, 0.8125rem);
+    min-height: 36px;
+    border-radius: 0.375rem;
+  }
+}
 
+/* Extra small devices */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 0.5rem;
+    height: 30px;
+  }
+  
+  #about,
+  #skills,
+  #projects,
+  #contact {
+    scroll-margin-top: 54px;
+  }
+  
+  .navbar .nav-links {
+    gap: 0.25rem;
+  }
+  
+  .navbar .nav-links a {
+    padding: 0.25rem 0.375rem;
+    font-size: 0.6875rem;
+    min-height: 32px;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: 28px;
+  }
+  
+  .navbar .nav-links a {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    min-height: 32px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .navbar .logo-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
 }

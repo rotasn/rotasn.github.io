@@ -4,4 +4,34 @@
   color: #000000;
   padding: 2rem;
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  width: 100%;
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+}
+
+/* Mobile-first responsive padding */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .app {
+    padding: 0.5rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .app {
+    padding: 0.5rem 1rem;
+  }
 }

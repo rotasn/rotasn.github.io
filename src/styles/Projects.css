@@ -274,18 +274,22 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .projects-section {
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
   }
   
   .projects-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
+  }
+  
+  .projects-grid {
+    gap: 2.5rem;
   }
   
   .project-card,
   .card-right {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 2rem;
   }
   
@@ -295,39 +299,137 @@
   }
   
   .project-visual {
-    height: 150px;
-  }
-  
-  .project-shape {
-    width: 120px;
     height: 120px;
   }
   
+  .project-shape {
+    width: 100px;
+    height: 100px;
+  }
+  
   .project-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   
   .project-icon img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   
   .project-title {
     font-size: 1.5rem;
   }
-}
-
-@media (max-width: 480px) {
-  .projects-title {
-    font-size: 2.5rem;
-  }
   
-  .project-card {
-    padding: 1.5rem;
+  .project-summary {
+    font-size: 1rem;
   }
   
   .project-details {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 3rem 0.75rem;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    gap: 2rem;
+  }
+  
+  .project-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .project-visual {
+    height: 100px;
+  }
+  
+  .project-shape {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .project-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .project-icon img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+  }
+  
+  .project-summary {
+    font-size: 0.9rem;
+  }
+  
+  .expand-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .project-details {
+    padding: 1.25rem;
+  }
+  
+  .feature-item {
+    font-size: 0.85rem;
+  }
+  
+  .tech-label {
+    font-size: 0.8rem;
+  }
+  
+  .tech-tags {
+    font-size: 0.8rem;
+  }
+  
+  .project-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .projects-title {
+    font-size: 1.75rem;
+  }
+  
+  .project-card {
+    padding: 1.25rem;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .project-summary {
+    font-size: 0.85rem;
+  }
+  
+  .expand-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .project-details {
+    padding: 1rem;
   }
 }
