@@ -35,7 +35,7 @@ function Skills() {
           
           <div className="skill-item" data-proficiency="high">
             <div className="skill-icon">
-              <i className="devicon-angularjs-plain colored"></i>
+              <i className="devicon-angular-plain colored"></i>
             </div>
             <h3>Angular</h3>
             <div className="skill-glow"></div>
